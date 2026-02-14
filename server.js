@@ -6,7 +6,9 @@ const app = express();
 app.use(express.json());
 
 // Load Firebase service account key
-const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+const serviceAccount = JSON.parse(
+  Buffer.from(process.env.FIREBASE_SERVICE_ACCOUNT_BASE64, "base64").toString("utf8")
+);
 
 
 admin.initializeApp({
