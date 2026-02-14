@@ -30,7 +30,7 @@ app.post("/webhook", async (req, res) => {
   console.log("Headers:", req.headers);
   console.log("Body:", req.body);
 
-  const secret = "c1d2ee4151c8411d80279314ce4e86b8_301cff";
+  const secret = "febd65d84da44143a147702c97ae6558_28c41f";
 
   const signature =
     req.headers["x-moniepoint-signature"] ||
