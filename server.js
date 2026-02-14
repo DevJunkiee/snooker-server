@@ -17,7 +17,7 @@ admin.initializeApp({
 });
 app.post("/webhook", async (req, res) => {
 
-  const secret = "PUT_MONIEPOINT_SECRET_HERE";
+  const secret = "c1d2ee4151c8411d80279314ce4e86b8_301cff";
 
   const signature =
     req.headers["x-moniepoint-signature"] ||
